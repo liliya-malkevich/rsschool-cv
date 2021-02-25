@@ -159,7 +159,7 @@ height: 100%;
 
 nav,aside{
     background-color: rgb(255, 233, 205);
-    width: 25%;
+    width: 30%;
     
 }
 article{
