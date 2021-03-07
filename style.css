@@ -94,7 +94,9 @@ body {
   margin: 0 0 32px;
   text-align: center;
 }
-
+.user-photo{
+width: 50%;
+}
 
 .intro h3,
 .portfolio h3 {
