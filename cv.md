@@ -2,7 +2,7 @@
 ## Contacts
 **Gmail**: [l.malkevich12@gmail.com](l.malkevich12@gmail.com)
 **Telegram:**[https://t.me/mlkvl](https://t.me/mlkvl)
-**Phone:** 
+**Phone:**
 * +375299454812 (A1)
 * +375292826781 (MTC)
 ## Information about me
@@ -10,80 +10,6 @@
 ## Skills
 I am fluent in C++ and HTML. The initial level of CSS, JS, Java. I am very familiar with the principles of OOP.
 ## Code example
-**C++**
-```
-#include <iostream>
-using namespace std;
-
-struct Node
-{
-	int x;
-	Node* left;
-	Node* right;
-};
-void print(Node*& Tree)              
-{
-	if (Tree != NULL)               
-	{
-		print(Tree->left);               
-		cout << Tree->x << " ";               
-		print(Tree->right);               
-	}
-}
-
-void del(Node*& Tree) {
-	if (Tree != NULL)               
-	{
-		del(Tree->left);               
-		del(Tree->right);                
-		delete Tree;                
-		Tree = NULL;                 
-	}
-
-}
-
-void add_node(int x, Node*& My) 
-{
-	if (NULL == My)             
-	{
-		My = new Node;          
-		My->x = x;              
-		My->left = My->right = NULL; 
-	}
-
-	if (x < My->x)  
-	{
-		if (My->left != NULL) add_node(x, My->left); 
-		else          
-		{
-			My->left = new Node;                 
-			My->left->left = My->left->right = NULL;   
-			My->left->x = x;                     
-		}
-	}
-
-	if (x > My->x)              
-	{
-		if (My->right != NULL) add_node(x, My->right); 
-		else             
-		{
-			My->right = new Node;                
-			My->right->left = My->right->right = NULL;   
-			My->right->x = x;                     
-		}
-	}
-}
-
-int main()
-{
-	Node* Tree = NULL;                  
-	add_node(5, Tree);
-	add_node(6, Tree);
-	print(Tree);
-	system("pause");
-	return 0;
-}
-```
 **HTML**
 ```
 <!DOCTYPE html>
@@ -140,13 +66,13 @@ body{
     margin:0;
 }
 header{
-    
+
     width: 100%;
     height: 110px;
     background: rgb(255, 179, 65);
 }
 footer{
-    
+
     width: 100%;
     height: 110px;
     background: rgb(255, 179, 65);
@@ -160,7 +86,7 @@ height: 100%;
 nav,aside{
     background-color: rgb(255, 233, 205);
     width: 30%;
-    
+
 }
 article{
     width: 50%;
@@ -201,7 +127,7 @@ for (let i = 2; i <= n; i++) {
             break;
         }
         alert(i);
-        break;				
+        break;
     }
 }
 let min = (a,b) =>{
