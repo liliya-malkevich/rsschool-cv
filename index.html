@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <title>CV</title>
+    <link rel="icon" href="assets/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+    <header class="page-header">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+            <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+            <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+            <li class="nav-item"><a class="header-phone" href="https://t.me/mlkvl">@mlkvl (Telegram)</a></li>
+          </ul>
+        </nav>
+    </header>
+    </div>
+    <main>
+    <section class="hero-image">
+      <div class="container">
+      <h1 class="heading">Liliya Malkevich</h1>
+      <figure class="user-image">
+        <img src="./img/photo_2020-11-01_13-16-26.jpg" alt="Photo" class="user-photo">
+      </figure>
+    </div>
+    </section>
+    <section id="summary" class="intro">
+      <div class="container">
+     <div>
+      <h3>Information about me</h3>
+      <p>Now I work as a programmer, my goal is learning something new. I like programming. Now I am studying С#,TypeScript. My strengths are responsibility and quick learning.</p>
+      <h3>Skills</h3>
+      <p>I am fluent in C#, JavaScript/TypeScript and HTML. The initial level of CSS, JS, Java. I am very familiar with the principles of OOP.</p>
+          </div>
+    </div>
+    </section>
+    <section id="code" class="portfolio">
+      <div class="container">
+      <h2 class="subheading">Code example</h2>
+     <h3 class="leng">JS</h3>
+     <pre><code>
+       let num;
+      do {
+       num = prompt("Ведите число больше 100", 0);
+      } while(num &lt;= 100 &amp;&amp; num);
+     let n = prompt("enter", 0 );
+     for (let i = 2; i &lt;= n; i++) {
+         for (let q = 2; q &lt;= i; q++) {
+             if (i % q == 0) {
+                 break;
+             }
+             alert(i);
+             break;
+         }
+     }
+     let min = (a,b) =&gt;{
+     if(a&lt;b){
+         alert(a);
+     }
+     else if(a&gt;b){
+         alert(b);
+     }
+     else{
+         alert("==");
+     }
+     };
+     min(3,4);
+     min(-7,6);
+     min(8,2);
+     min(6,6);
+      let pow = (x,n) =&gt;{
+          let p = x;
+     for(let i = 1; i &lt; n; i++){
+         x=p*x;
+     }
+     return x;
+      };
+      alert(pow(3,3));
+    </code></pre>
+    <h3 class="headthree">Examples of HTML and CSS layout</h3>
+    <img src="./img/ex.png" alt="css" class="project-image">
+    </div>
+    </section>
+    <section class="portfolio">
+      <div class="container">
+      <h2 class="subheading">Project example</h2>
+      <ul>
+      <li><a href="https://github.com/liliya-malkevich/schedule_project">Schedule</a></li>
+      <li><a href="https://github.com/liliya-malkevich/jornal">Journal</a></li>
+      </ul>
+      </div>
+    </section>
+<section id="education">
+  <div class="container">
+    <h2 class="subheading">Education</h2>
+    <p>BSU, faculty of Radiophysics and computer technologies, specialty-applied Informatics.</p>
+    <h3>Completed courses:</h3>
+    <ul>
+    <li><a href="https://htmlacademy.ru/courses/intro-to-web-development">Знакомство с веб-разработкой</a></li>
+    <li><a href="https://htmlacademy.ru/courses/basic-html-css">Знакомство с HTML и CSS</a></li>
+    <li><a href="https://ru.hexlet.io/courses/introduction_to_programming">Введение в программирование(JS)</a></li>
+    <li><a href="https://ru.code-basics.com/languages/html">HTML для начинающих</a></li>
+    <li><a href="https://ru.code-basics.com/languages/css">CSS для начинающих</a></li>
+    <li><a href="https://ru.code-basics.com/languages/javascript">JavaScript для начинающих</a></li>
+  </ul>
+  </div>
+</section>
+<section class="eng" id="english">
+  <div class="container">
+    <h2 class="subheading">English</h2>
+    <p>English proficiency level: А2+</p>
+  </div>
+</section>
+</main>
+    <footer class="page-footer">
+      <div class="container">
+           <a class="header-phone" href="https://t.me/mlkvl">@mlkvl (Telegram)</a>
+           <a href="https://github.com/liliya-malkevich">GitHub</a>
+           <a href="https://rs.school/js/"><img src="./assets/rs_school_js.svg" alt="rs" class="rs-image"></a>
+           <p>2023</p>
+    </div>
+    </footer>
+  </body>
+</html>
